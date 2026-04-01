@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center gap-20">
+    <h1 class="text-5xl font-bold text-gray-900">Pomodoro Timer</h1>
+    <p class="text-8xl text-gray-700" id="timer">25:00</p>
+    <section class="">
+      <button
+        type="button"
+        id="start"
+        class="text-xl font-bold uppercase mr-6 text-white bg-green-600 p-2 px-7 rounded-md"
+      >
+        start
+      </button>
+      <button
+        type="button"
+        id="stopt"
+        class="text-xl font-bold uppercase mr-6 text-white bg-red-600 p-2 px-7 rounded-md"
+      >
+        stop
+      </button>
+      <button
+        type="button"
+        id="reset"
+        class="text-xl font-bold uppercase text-white bg-gray-600 p-2 px-7 rounded-md"
+      >
+        reset
+      </button>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
