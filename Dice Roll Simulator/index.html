@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll Simulator</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="min-h-screen flex flex-col justify-center items-center">
+    <h1 class="text-5xl font-bold">Dice Roll Simulator</h1>
+    <div class="w-32 text-9xl text-center" id="dice">&#9860;</div>
+    <button
+      id="roll-btn"
+      type="button"
+      class="bg-blue-500 hover:bg-blue-300 ease-in-out p-4 px-10 text-white text-2xl rounded-xl my-6"
+    >
+      Roll Dice
+    </button>
+    <ul id="roll-history" class="w-2xl my-10"></ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
