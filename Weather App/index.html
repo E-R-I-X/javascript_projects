@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Weather App</title>
+  </head>
+  <body class="min-h-screen grid place-items-center bg-gray-100">
+    <main
+      class="min-w-2xl max-w-2xl shadow-xl bg-white p-10 flex flex-col gap-4 items-center justify-center rounded-md"
+    >
+      <h1 class="text-4xl font-bold">Weather App</h1>
+      <form class="flex justify-between text-center items-center my-2 w-full">
+        <input
+          id="city"
+          type="text"
+          placeholder="Enter City"
+          class="text-lg grow mr-4 p-1.5"
+        />
+        <button
+          type="submit"
+          value="Get Weather"
+          class="bg-blue-500 text-white py-2 px-6 text-xl rounded-md"
+        >
+          Get Weather
+        </button>
+      </form>
+
+      <article id="icon" class="h-28">
+        <!-- <img src="" alt="" /> -->
+      </article>
+      <h2 id="temperature" class="text-5xl font-bold">12℃</h2>
+      <p id="description" class="text-2xl">light rain</p>
+      <section class="grid grid-cols-3 gap-6 w-full mt-4">
+        <p id="feels" class="bg-gray-200 pt-4 px-11 pb-10 text-center">
+          Feels like: 12
+        </p>
+        <p id="humidity" class="bg-gray-200 pt-4 px-11 pb-10 text-center">
+          Humidity: 92%
+        </p>
+        <p id="wind-speed" class="bg-gray-200 pt-4 px-11 pb-10 text-center">
+          Wind speed: 8.75 m/s
+        </p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
